@@ -1,0 +1,135 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* root{
+  --colorbg--: #f2f2f2;
+  --colortext--:#0065fc;
+} */
+body {
+  width: 100%;
+  margin-top: 1.25rem;
+  font-family: Raleway, Arial, Helvetica, sans-serif;
+  margin: 10px 10px;
+}
+
+h3 {
+  margin-top: 10px;
+}
+p {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+/* -----------------start header---------------- */
+header {
+  /* width: 90%; */
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 20px;
+}
+header ul {
+  list-style: none;
+}
+li a {
+  text-decoration: none;
+}
+/* ----------------end header--------------------- */
+/* ----------------start nav------------------- */
+nav ul {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  height: 30px;
+}
+nav ul {
+  border-bottom: 2px solid #ccc;
+}
+nav ul:hover {
+  border-bottom: 2px solid rgb(76, 91, 230);
+}
+nav ul {
+  list-style-type: none;
+}
+
+/* end nav */
+
+/* --------------start form search------------------- */
+
+form {
+  position: relative;
+  display: flex;
+  height: 2.5rem;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+input[type="text"] {
+  width: 70%;
+  height: 1.875rem;
+  border: 1px solid #f2f2f2;
+  padding: 10px;
+  font-family: inherit;
+  font-weight: bold;
+}
+form button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15%;
+  height: 1.875rem;
+  border: none;
+  padding: 10px;
+  background-color: #0065fc;
+  border-radius: 0 10px 10px 0px;
+  font-size: 1rem;
+  color: #fff;
+}
+i.fa-map-marker-alt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1.875rem;
+  height: 1.875rem;
+  background-color: #f2f2f2;
+  border-radius: 10px 0px 0px 10px;
+}
+/* --------------end form search------------------- */
+/* --------------start filtres------------------- */
+.filtres {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.button {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 1.875rem;
+  border: 1px solid #b4b0b0;
+  /* border-left: transparent; */
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 15px 15px 15px 15px;
+  margin-top: 10px;
+  font-family: inherit;
+  font-weight: bold;
+  margin-right: 20px;
+}
+span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: -11px;
+  background-color: #c8deff;
+  width: 1.875rem;
+  height: 1.875rem;
+  border-radius: 50%;
+  color: #0065fc;
+}
+/* --------------end filtres------------------- */
+

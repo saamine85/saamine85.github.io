@@ -8,46 +8,39 @@
   --colortext--:#0065fc;
 } */
 body {
-  /* width: 95%; */
   margin-top: 1.25rem;
   font-family: Raleway, Arial, Helvetica, sans-serif;
   /* margin: 20px ; */
 }
 h1 {
-  /* margin: 20px; */
   text-align: start;
   font-size: 1.5625rem;
 }
 
 p {
-  margin-top:10px;
-  margin-bottom:10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   font-size: 14px;
-  /* text-align: justify; */
 }
-h2{
-margin:20px;
-font-size: 1.25rem;
+h2 {
+  margin: 20px;
+  font-size: 1.25rem;
 }
 
 /* -----------------start header---------------- */
 header {
-  margin: 20px ; 
+  margin: 20px;
 }
 .logo {
-  /* margin: auto; */
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* margin: 20px ; */
-
 }
 .logo a {
   list-style: none;
   text-decoration: none;
-  font-weight:bold;
+  font-weight: bold;
   color: #0065fc;
-
 }
 li a {
   text-decoration: none;
@@ -61,11 +54,10 @@ nav ul {
   margin-bottom: 20px;
   display: flex;
   justify-content: space-around;
-  /* position: absolute; */
-  align-items: c;
+  /* align-items: c; */
   height: 30px;
 }
- nav ul  {
+nav ul {
   border-bottom: 2px solid #ccc;
 }
 nav ul:hover {
@@ -95,7 +87,7 @@ input[type="text"] {
   padding: 10px;
   font-family: inherit;
   font-weight: bold;
-  font-size:20px;
+  font-size: 20px;
 }
 form button {
   display: flex;
@@ -135,7 +127,6 @@ i.fa-map-marker-alt {
   align-items: center;
   height: 2.8125rem;
   border: 1px solid #eeecec;
-  /* border-left: transparent; */
   padding: 10px;
   background-color: #fff;
   border-radius: 20px;
@@ -156,86 +147,106 @@ i.fa-map-marker-alt {
   border-radius: 50%;
   color: #0065fc;
   font-size: 1.25rem;
-
 }
 /* --------------end filtres------------------- */
 /* --------------start info -----------*/
-i.fa-info{
+i.fa-info {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size:12px;
+  font-size: 12px;
   background-color: #f2f2f2;
   width: 1.5rem;
   height: 1.5rem;
   border-radius: 50%;
   color: #0065fc;
-  margin-right:10px;
-  }
-.info{
-display:flex;
-/* align-items: center; */
+  margin-right: 10px;
+}
+.info {
+  display: flex;
+  /* align-items: center; */
 }
 /* --------------end info -----------*/
-aside{
+aside {
   margin-top: 30px;
   padding-bottom: 20px;
   padding-top: 10px;
-background-color: rgb(200, 200, 201);
+  background-color: rgb(200, 200, 201);
 }
-.side-header{
+.side-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.side-header span{
-  margin-right:20px;
+.side-header span {
+  margin-right: 20px;
   font-size: 1.875rem;
 }
-.card-side{
+.card-side {
   display: flex;
   margin: 20px;
   height: 160px;
   background-color: #ffffff;
-  /* border: 5px solid #fff; */
-  border-radius:20px;
+  border-radius: 20px;
 }
-.card-image img{
-height: 160px;
-width: 150px;
-border-radius: 20px 0 0 20px;
-border: #fff 3px solid;
+.side-image img {
+  height: 160px;
+  width: 150px;
+  border-radius: 20px 0 0 20px;
+  border: #fff 3px solid;
 }
-.card-text{
+.card-text {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   margin-left: 10px;
 }
-.card-text span{
+.card-text span {
   color: #0065fc;
 }
- span .star{
-  color: hsl(0, 0%, 77%);
+span .star {
+  color: #c4c4c4;
 }
-
-
-/* .paragraph { */
+p .price {
+  font-weight: bold;
+  color: inherit;
+}
+/* -----------------start card main */
+.main {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: rgb(152, 152, 209);
+}
+.card-main {
+  width: auto;
   /* display: flex; */
-  /* justify-content: center; */
-  /* align-items: center; */
-  /* position: ; */
-  /* width: 1.4rem; */
-  /* height: 1.4rem; */
-  /* border-radius: 50%; */
-  /* border: 1px solid #b4b0b0; */
-  /* color: #0065fc; */
-  /* border-radius: 50%; */
-  /* margin-right: 20px; */
+  margin: 20px;
+  height: 250px;
+  background-color: #eee;
+  border-radius: 20px;
 }
-/* .info{ */
-  /* position: absolute; */
-  /* margin-left: 15px; */
-
-  /* flex-wrap: nowrap; */
-/* } */
+.main-image img {
+  height: 160px;
+  width: 100%;
+  /* background-size: contain; */
+  border-radius: 20px 20px 0 0;
+  border: #fff 5px solid;
+}
+.main-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: 20px;
+  padding-bottom: 5px;
+  margin-right: 20px;
+}
+.main-text span {
+  color: #0065fc;
+}
+p .price-main {
+  font-weight: bold;
+  color: inherit;
+}
+span .main-star {
+  color: #c4c4c4;
+}

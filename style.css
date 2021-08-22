@@ -191,7 +191,8 @@ aside {
 }
 .side-image img {
   height: 160px;
-  width: 150px;
+  width: 160px;
+  object-fit: cover;
   border-radius: 20px 0 0 20px;
   border: #fff 3px solid;
 }
@@ -199,7 +200,7 @@ aside {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  margin-left: 10px;
+  margin-left: 5px;
 }
 .card-text span {
   color: #0065fc;
@@ -219,16 +220,17 @@ p .price {
 }
 .card-main {
   width: auto;
-  /* display: flex; */
+  /* display: block; */
   margin: 20px;
-  height: 250px;
+  height: 210px;
   background-color: #eee;
   border-radius: 20px;
 }
 .main-image img {
-  height: 160px;
-  width: 100%;
   /* background-size: contain; */
+  height: 120px;
+  width: 100%;
+  object-fit: cover;
   border-radius: 20px 20px 0 0;
   border: #fff 5px solid;
 }
@@ -249,4 +251,53 @@ p .price-main {
 }
 span .main-star {
   color: #c4c4c4;
+}
+.main .text-plus {
+  margin-left: 20px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+/* start section mainfull */
+.mainfull {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: rgb(57, 160, 143);
+}
+
+.card-mainfull {
+  width: auto;
+  margin: 20px;
+  height: 210px;
+  background-color: #eee;
+  border-radius: 20px;
+}
+.mainfull-image img {
+  height: 160px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
+  border: #fff 5px solid;
+}
+.mainfull h3 {
+  padding-top: 10px;
+}
+
+footer {
+  background-color: aquamarine;
+  padding-top: 40px;
+  padding-left: 20px;
+  padding-bottom: 50px;
+}
+
+footer ul {
+  list-style-type: none;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+footer ul li {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+footer a {
+  color: inherit;
 }

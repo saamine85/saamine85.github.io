@@ -26,7 +26,9 @@ h2 {
   margin: 20px;
   font-size: 1.25rem;
 }
-
+ul {
+  list-style-type: none;
+}
 /* -----------------start header---------------- */
 header {
   margin: 20px;
@@ -47,26 +49,34 @@ li a {
 }
 /* ----------------end header--------------------- */
 /* ----------------start nav------------------- */
-nav ul {
+
+header nav ul {
   margin-left: -20px;
   margin-right: -20px;
   margin-top: 20px;
   margin-bottom: 20px;
   display: flex;
+  /* padding-left: 20px; */
   justify-content: space-around;
   /* align-items: c; */
-  height: 30px;
+  /* height: 30px; */
 }
-nav ul {
+header ul li {
   border-bottom: 2px solid #ccc;
+  width: 50%;
+  padding-bottom: 5px;
+  text-align: center;
 }
-nav ul:hover {
-  border-bottom: 2px solid rgb(76, 91, 230);
+header li a {
+  color: black;
 }
-nav ul {
-  list-style-type: none;
+header li a:hover {
+  color: rgb(76, 91, 230);
 }
 
+header ul li:hover {
+  border-bottom: 2px solid rgb(76, 91, 230);
+}
 /* end nav */
 
 /* --------------start form search------------------- */
@@ -81,7 +91,6 @@ form {
 }
 
 input[type="text"] {
-  width: 100%;
   height: 2.8125rem;
   border: 1px solid #f2f2f2;
   padding: 10px;
@@ -94,11 +103,11 @@ form button {
   justify-content: center;
   align-items: center;
   position: relative;
-  left: -10px;
+  left: -20px;
   width: 15%;
   height: 2.8125rem;
   border: none;
-  padding: 10px;
+  padding: 20px;
   background-color: #0065fc;
   border-radius: 10px;
   color: #fff;
@@ -116,10 +125,16 @@ i.fa-map-marker-alt {
 }
 /* --------------end form search------------------- */
 /* --------------start filtres------------------- */
+
+.filtres h2 {
+  width: 100%; /*quand ca sera en ecran pleine enleve le width 100%*/
+}
 .filtres {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
+  margin-top: 10px;
+  margin-left: -20px;
 }
 .button {
   display: flex;
@@ -127,13 +142,17 @@ i.fa-map-marker-alt {
   align-items: center;
   height: 2.8125rem;
   border: 1px solid #eeecec;
-  padding: 10px;
+  padding-left: 10px;
+  padding-right: 20px;
+  padding-top: 12px;
+  padding-bottom: 12px;
   background-color: #fff;
-  border-radius: 20px;
+  border-radius: 50px;
   margin-top: 10px;
   font-family: inherit;
   font-weight: bold;
-  margin-right: 20px;
+  font-size: 16px;
+  margin-left: 20px;
 }
 .button-text {
   display: flex;
@@ -162,7 +181,7 @@ i.fa-info {
   color: #0065fc;
   margin-right: 10px;
 }
-.info {
+.info p {
   display: flex;
   /* align-items: center; */
 }

@@ -13,6 +13,7 @@ body {
   /* margin: 20px ; */
 }
 h1 {
+  padding-top: 10px;
   text-align: start;
   font-size: 1.5625rem;
 }
@@ -33,12 +34,12 @@ ul {
 header {
   margin: 20px;
 }
-.logo {
+/* .logo {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-.logo a {
+} */
+/* .logo a {
   list-style: none;
   text-decoration: none;
   font-weight: bold;
@@ -46,38 +47,52 @@ header {
 }
 li a {
   text-decoration: none;
-}
+} */
 /* ----------------end header--------------------- */
 /* ----------------start nav------------------- */
-
-header nav ul {
-  margin-left: -20px;
-  margin-right: -20px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+.logo-nav {
   display: flex;
-  /* padding-left: 20px; */
-  justify-content: space-around;
-  /* align-items: c; */
-  /* height: 30px; */
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  margin-bottom: 60px;
 }
-header ul li {
-  border-bottom: 2px solid #ccc;
-  width: 50%;
-  padding-bottom: 5px;
-  text-align: center;
+.logo-nav .mobile {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  flex-direction: column-reverse;
 }
-header li a {
-  color: black;
+.mobile .test-2 {
+  margin-top: 30px;
+  display: flex;
+  position: absolute;
+  top: 40px;
+  margin-right: 0px;
 }
-header li a:hover {
-  color: rgb(76, 91, 230);
+.test-2 li a {
+  display: flex;
+  justify-content: space-evenly;
+  margin-right: 80px;
+  margin-left: 30px;
+  width: 100%;
+  padding-bottom: 10px;
+  border-bottom: 2px solid grey;
 }
-
-header ul li:hover {
-  border-bottom: 2px solid rgb(76, 91, 230);
+.mobile .test-2 li a:hover {
+  color: blue;
+  border-bottom: 2px solid blue;
 }
-/* end nav */
+a.inscrire {
+  padding-bottom: 10px;
+  font-weight: bold;
+  color: blue;
+}
+/* .logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+} */
 
 /* --------------start form search------------------- */
 
@@ -135,7 +150,7 @@ i.fa-map-marker-alt {
 /* --------------start filtres------------------- */
 
 .filtres h2 {
-  width: auto; /*quand ca sera en ecran pleine enleve le width 100%*/
+  width: 100%; /*quand ca sera en ecran pleine enleve le width 100%*/
 }
 .filtres {
   display: flex;
@@ -343,6 +358,70 @@ footer a {
 /* media querries */
 /* mobile */
 @media (min-width: 767px) {
+  nav ul li {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .logo-nav .mobile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .mobile {
+    display: flex;
+    margin-left: 0px;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .mobile li {
+    display: flex;
+    margin-right: 20px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .mobile .test-2 {
+    margin-top: 0px;
+    position: static;
+  }
+  .test-2 li a {
+    padding: 25px;
+    text-align: center;
+    display: block;
+    width: 100%;
+    margin-right: 0px;
+    margin-left: 0px;
+    border-bottom: none;
+  }
+  .mobile li a {
+    display: block;
+    width: 100%;
+    margin-right: 0px;
+    margin-left: 0px;
+    padding: 25px;
+    border-bottom: none;
+    text-align: center;
+  }
+  .mobile .test-2 li a:hover {
+    color: blue;
+    border-bottom: none;
+  }
+  .mobile li a:hover {
+    color: blue;
+    border-top: 2px solid blue;
+  }
+  /* .mobile li a:hover {
+    color: blue;
+    border-bottom: transparent;
+    border-top: 2px solid blue;
+  } */
+  a.inscrire {
+    font-weight: bold;
+    color: blue;
+  }
+
   footer {
     display: flex;
     flex-wrap: wrap;
@@ -352,13 +431,7 @@ footer a {
     display: grid;
     grid-template-columns: repeat(2, 50%);
   }
-  .populaire {
-    /* display:flex; */
-    /* width: 100%; */
-    /* flex-wrap: wrap; */
 
-    /* grid-template-columns:33%; */
-  }
   form span {
     display: flex;
     color: #fff;
@@ -375,7 +448,76 @@ footer a {
     border-radius: 0px 10px 10px 0px;
   }
 }
+
+header {
+  margin-top: 20px;
+}
+li a {
+  text-decoration: none;
+}
+/* ----------------start nav------------------- */
+
+/* header ul {
+  display: flex;
+  flex-direction: column-reverse; */
+/* justify-content: flex-start; */
+/* } */
+/* .logo-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+header ul .mobile{
+  display: flex;
+}
+header nav ul {
+  display: flex;
+}
+header li {
+  margin-left: 20px;
+} */
+/* header nav ul {
+  margin-left: -20px;
+  margin-right: -20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-around;
+  height: 30px;
+}
+header ul li {
+  border-bottom: 2px solid #ccc;
+  width: 50%;
+  padding-bottom: 5px;
+  text-align: center;
+}
+header li a {
+  color: black;
+}
+header li a:hover {
+  color: rgb(76, 91, 230);
+}
+
+header ul li:hover {
+  border-bottom: 2px solid rgb(76, 91, 230);
+} */
+/* end nav */
+
 @media (min-width: 1023px) {
+  body {
+    margin: 20px;
+  }
+  .filtres {
+    flex-wrap: nowrap;
+  }
+  .info p {
+    display: flex;
+    align-items: center;
+  }
+  .filtres h2 {
+    width: auto; /*quand ca sera en ecran pleine enleve le width 100%*/
+  }
   /* form span {
     display: flex;
     color: #fff;
@@ -433,17 +575,6 @@ footer a {
   }
 }
 @media (min-width: 1200px) {
-  body {
-    margin: 40px;
-  }
-  .filtres {
-    flex-wrap: nowrap;
-  }
-  .info p {
-    display: flex;
-    align-items: center;
-  }
-
   .side-header {
     margin-left: 20px;
     margin-right: 20px;

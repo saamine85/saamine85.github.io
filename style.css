@@ -7,10 +7,7 @@ html,
 img {
   filter: invert(0);
 }
-:root {
-  --white: #f2f2f2;
-  --blue: #0065fc;
-}
+
 body {
   font-family: Raleway, Arial, Helvetica, sans-serif;
   background-color: #fff;
@@ -37,6 +34,8 @@ ul {
 }
 a {
   text-decoration: none;
+  color: #000;
+  font-weight: 500;
 }
 /* -----------------start header---------------- */
 header {
@@ -66,6 +65,7 @@ header nav ul {
   padding-left: 0px;
   padding-right: 0px;
   font-weight: bold;
+  color: #0065fc;
 }
 .inscrire a:hover {
   border-bottom: none;
@@ -107,7 +107,7 @@ form button {
   justify-content: center;
   align-items: center;
   position: relative;
-  left: -20px;
+  left: -15px;
   width: 3rem;
   height: 3rem;
   border: none;
@@ -409,7 +409,6 @@ footer a:hover {
   }
   .inscrire a {
     position: static;
-    font-weight: normal;
     padding-left: 40px;
     padding-right: 40px;
   }
@@ -421,8 +420,8 @@ footer a:hover {
     padding-left: 40px;
   }
   header li a:hover {
-    color: blue;
-    border-top: 3px solid blue;
+    color:#0065fc;
+    border-top: 3px solid #0065fc;
     border-bottom: none;
     padding-top: 40px;
   }

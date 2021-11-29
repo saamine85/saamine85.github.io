@@ -75,9 +75,8 @@ header li a {
   padding-right: 60px;
 }
 header li a:hover {
-  --a-blue: #0065fc;
-  color: var(--a-blue);
-  border-bottom: 3px solid var(--a-blue);
+  color: #0065fc;
+  border-bottom: 3px solid #0065fc;
   padding-bottom: 10px;
 }
 /* --------------start form search------------------- */
@@ -554,7 +553,5 @@ footer a:hover {
     grid-row-end: 9;
     height: auto;
   }
-  footer {
-    padding-bottom: -40px;
-  }
+  
 }
